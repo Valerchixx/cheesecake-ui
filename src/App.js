@@ -9,6 +9,7 @@ import {
 
 import {Login} from './pages/Login/Login';
 import {Menu} from './pages/Menu/Menu';
+import {Profile} from './pages/Profile/Profile';
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 				<Routes>
 					<Route path='/login' element={<Login />} />
 					<Route path='*' element={<Menu />} />
+					<Route path='/profile' element={<Profile />} />
 				</Routes>
 			</Router>
 

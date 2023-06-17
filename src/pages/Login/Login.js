@@ -1,6 +1,7 @@
 import React from 'react';
-import styles from './login.module.css';
 import {Link} from 'react-router-dom';
+
+import styles from './login.module.scss';
 
 export const Login = () => (
 	<div className={styles.modal}>

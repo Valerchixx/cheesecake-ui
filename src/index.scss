@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@mixin container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+
+$QuickSand: 'Quicksand', sans-serif;
+$Inter:  'Inter', sans-serif;
+$textColor: #292929;
+

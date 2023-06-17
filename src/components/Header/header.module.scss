@@ -1,0 +1,35 @@
+@import './../../index.scss';
+
+.headerWrap {
+    @include container;
+    margin-top: 20px;
+    .contentContainer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .navWrap {
+            display: flex;
+            align-items: center;
+
+            .navItem {
+                font-size: 20px;
+                color: #000;
+                font-family: $QuickSand;
+                font-style: normal;
+                font-weight: 400;
+                cursor: pointer;
+                padding-right: 25px;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .cartItem {
+                cursor: pointer;
+            }
+        }
+    }
+
+}

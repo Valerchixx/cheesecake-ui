@@ -1,11 +1,14 @@
+import './App.scss';
+
 import React from 'react';
-import './App.css';
 import {
 	BrowserRouter as Router,
-	Routes,
 	Route,
+	Routes,
 } from 'react-router-dom';
+
 import {Login} from './pages/Login/Login';
+import {Menu} from './pages/Menu/Menu';
 
 function App() {
 	return (
@@ -13,6 +16,7 @@ function App() {
 			<Router>
 				<Routes>
 					<Route path='/login' element={<Login />} />
+					<Route path='*' element={<Menu />} />
 				</Routes>
 			</Router>
 

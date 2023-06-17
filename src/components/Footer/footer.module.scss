@@ -1,0 +1,45 @@
+@import './../../index.scss';
+
+.footerWrap{
+   width: 100%;
+   background-color: #84563C;
+   .contentContainer{
+    @include container;
+    .logoWrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .listsWrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 35px;
+        padding-top: 15px;
+        .listItem {
+            list-style: none;
+            color: #fff;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            margin-top: 15px;
+            font-family: $Inter;
+            cursor: pointer;
+            &:hover  {
+                text-decoration: underline;
+            }
+        }
+        .title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+
+            &:hover  {
+                text-decoration: none;
+            }
+        }
+    }
+
+   }
+}

@@ -1,6 +1,9 @@
+/* eslint-disable no-useless-concat */
+import './index.scss';
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
@@ -11,9 +14,6 @@ root.render(
 	</React.StrictMode>,
 );
 
-console.log('%Helloooo');
+console.log('%c' + 'Hold Up!', 'color: #7289DA; -webkit-text-stroke: 2px black; font-size: 72px; font-weight: bold;');
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

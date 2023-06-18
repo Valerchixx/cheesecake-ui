@@ -6,8 +6,31 @@ import styles from './profile.module.scss';
 export const Profile = () => {
 
         const [user, setUser] = useState(
-            {name: '', second_name: '', email: '', address: '', phone_number: ''},
+            {name: '', second_name: '', email: '', address: '', phone_number: '', user_id: 0},
         );
+
+    const updateUser = async () => {
+        try {
+            console.log(JSON.stringify({
+                id: user.user_id,
+                name: user.name,
+                second_name: user.second_name}));
+            const response = await fetch('http://34.116.208.117:30423/api/v1/user', {
+                method: 'PATCH',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    id: user.user_id,
+                    name: user.name,
+					second_name: user.second_name,
+                }),
+            })
+
+        } catch (error) {
+            console.error('Failed to update user:', error);
+        }
+    };
 
         useEffect(() => {
             const fetchUser = async () => {
@@ -95,7 +118,7 @@ export const Profile = () => {
                                 </td>
                             </tr>
                         </table>
-                        <button type={'submit'}>Submit</button>
+                        <button type={'submit'} onClick={updateUser}>Submit</button>
                     </div>
 
                 </Layout>

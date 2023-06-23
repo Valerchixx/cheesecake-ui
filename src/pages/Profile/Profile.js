@@ -57,7 +57,7 @@ export const Profile = () => {
                     <div className={styles.main}>
                         <table>
                             <tr>
-                                <td>
+                                <td className={styles.table_left}>
                                     Name:
                                 </td>
                                 <td>
@@ -67,7 +67,7 @@ export const Profile = () => {
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td className={styles.table_left}>
                                     Surname:
                                 </td>
                                 <td>
@@ -77,7 +77,7 @@ export const Profile = () => {
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td className={styles.table_left}>
                                     Phone:
                                 </td>
                                 <td>
@@ -87,7 +87,7 @@ export const Profile = () => {
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td className={styles.table_left}>
                                     Address:
                                 </td>
                                 <td>
@@ -97,12 +97,12 @@ export const Profile = () => {
                                 </td>
                             </tr>
                         </table>
-                        <h1>
+                        <h1 className={styles.name}>
                             Notifications
                         </h1>
                         <table>
                             <tr>
-                                <td>
+                                <td className={styles.table_left}>
                                     Email:
                                 </td>
                                 <td>
@@ -110,7 +110,7 @@ export const Profile = () => {
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td className={styles.table_left}>
                                     Phone:
                                 </td>
                                 <td>
